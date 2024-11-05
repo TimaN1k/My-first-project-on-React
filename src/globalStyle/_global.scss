@@ -1,0 +1,29 @@
+body{
+    background: -webkit-linear-gradient(90deg, #414141,#1e1e1e);
+    background: linear-gradient(90deg, #414141,#1e1e1e);
+    color: var(--color-light);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base); 
+    font-weight: var(--font-weight-base);
+    line-height: 1.28px;                                     
+}
+
+h1, h2{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+input,
+button,
+textarea,
+a,
+svg*{
+    transition-duration: var(--transition-duration);
+}

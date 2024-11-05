@@ -1,0 +1,32 @@
+@mixin abs-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+@mixin link-reset{
+    text-decoration: none;
+    color: inherit;
+
+    @include hover{
+        text-decoration: none;        
+    }
+}
+
+@mixin button-reset{
+    border: var(--border);
+    background-color: transparent;
+    padding: 0;
+}
+
+@mixin inline-flex($isInline){
+    @if($isInline){
+        display: inline-flex;
+    }@else{
+        display: flex;
+    }    
+
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./font/Poppins-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./font/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./font/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./font/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./font/Poppins-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --color-dark: #000;
+  --color-light: #FFF;
+  --color-head-button: rgb(76, 187, 23);
+  --color-light-grey: rgb(68, 68, 68);
+  --color-bg-but-color: #d9d9d9;
+  --color-dark-gredient: #1e1e1e;
+  --color-light-gredient: rgb(66, 66, 66);
+  --color-forecast: #373636;
+  --font-family: "Poppins";
+  --font-size-base: 20px;
+  --font-weight-base: 600;
+  --border-radius-base: 30px;
+  --border-radius-dop: 40px;
+  --border: none;
+  --box-shadow: 10px 10px 5px #212121;
+  --conteiner-max-width: 1400px;
+  --conteiner-paddingY: 40px;
+  --button-height: 62px;
+  --input-height: 62px;
+  --transition-duration: 0.2s;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.conteiner {
+  max-width: calc(var(--conteiner-max-width) - var(--conteiner-paddingY) * 2);
+  margin-inline: auto;
+}
+
+.visually-mobile {
+  display: none !important;
+}
+
+.hidden-mobile {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(90deg, #414141, #1e1e1e);
+  color: var(--color-light);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-base);
+  line-height: 1.28px;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+input,
+button,
+textarea,
+a,
+svg* {
+  transition-duration: var(--transition-duration);
+}/*# sourceMappingURL=index.css.map */
