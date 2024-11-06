@@ -9,7 +9,10 @@ export function Header(){
                     <div className="butColor__title">Dark mode</div>
                 </div>
                 <div className="header__searchInput search">
-                    <input placeholder={'Search for your preffered city...'} type="search" className="searth__pole"/>                    
+                    <input placeholder={'Search for your preffered city...'} type="search" className="search__pole"/> 
+                    <button type='submit' className="search__inner"> 
+                        <div className="search__in"></div>                                      
+                    </button>                   
                 </div>
                 <button className="header__butLocation location"> 
                     <div className="location__Inner"></div>                  
@@ -19,3 +22,4 @@ export function Header(){
         </div>
     )
 }
+
